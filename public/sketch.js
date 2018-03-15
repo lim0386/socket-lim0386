@@ -5,15 +5,6 @@
 // Keep track of our socket connection
 var socket;
 
-var request = require('request');
-
-request('https://ipinvestigator.expeditedaddons.com/?api_key=396AEYPZ07DHS12W3K76J4O8L5QUTRF582IM1CB9N04GXV&ip=68.10.149.45', function (error, response, body) {
-  console.log('Status:', response.statusCode);
-  console.log('Headers:', JSON.stringify(response.headers));
-  console.log('Response:', body);
-});
-
-
 function setup() {
   createCanvas(400, 400);
   background(0);
