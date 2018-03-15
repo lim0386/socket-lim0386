@@ -12,7 +12,7 @@ var server = app.listen(process.env.PORT || 3000, listen);
 
 var request = require('request');
 
-request('https://ipinvestigator.expeditedaddons.com/?api_key=396AEYPZ07DHS12W3K76J4O8L5QUTRF582IM1CB9N04GXV&ip=68.10.149.45', function (error, response, body) {
+request('https://ipinvestigator.expeditedaddons.com/?api_key=OUA8T6Q316P7S582JZ92K07RYBW9IE1NLGVCHM504D4FX3&ip=68.10.149.45', function (error, response, body) {
   console.log('Status:', response.statusCode);
   console.log('Headers:', JSON.stringify(response.headers));
   console.log('Response:', body);
