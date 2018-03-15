@@ -10,14 +10,6 @@ var app = express();
 // process.env.PORT is related to deploying on heroku
 var server = app.listen(process.env.PORT || 3000, listen);
 
-var request = require('request');
-
-request('https://ipinvestigator.expeditedaddons.com/?api_key=396AEYPZ07DHS12W3K76J4O8L5QUTRF582IM1CB9N04GXV&ip=68.10.149.45', function (error, response, body) {
-  console.log('Status:', response.statusCode);
-  console.log('Headers:', JSON.stringify(response.headers));
-  console.log('Response:', body);
-});
-
 
 // This call back just tells us that the server has started
 function listen() {
